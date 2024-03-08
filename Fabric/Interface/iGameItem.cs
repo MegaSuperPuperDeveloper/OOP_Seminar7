@@ -2,5 +2,5 @@
 
 public interface iGameItem
 {
-    
+    void Open();
 }
