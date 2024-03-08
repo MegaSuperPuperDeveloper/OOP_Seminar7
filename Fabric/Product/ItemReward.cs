@@ -1,6 +1,8 @@
-﻿namespace Fabric.Product;
+﻿using Fabric.Interface;
 
-public class ItemReward
+namespace Fabric.Product;
+
+public abstract class ItemReward : iGameItem
 {
-    
+    public abstract void Open();
 }
