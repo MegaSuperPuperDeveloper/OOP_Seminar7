@@ -1,6 +1,15 @@
-﻿namespace Fabric.Fabric;
+﻿using Fabric.Interface;
 
-public class ItemGenerator
+namespace Fabric.Fabric;
+
+public abstract class ItemGenerator
 {
-    
+    public void OpenReward()
+    {
+        iGameItem gameItem = CreateItem();
+        gameItem.Open();
+    }
+
+    public abstract iGameItem CreateItem();
+
 }
