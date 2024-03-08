@@ -1,6 +1,9 @@
 ﻿namespace Fabric.Product;
 
-public class Gem
+public class Gem : ItemReward
 {
-    
+    public override void Open()
+    {
+        Console.WriteLine("Gem reward!");
+    }
 }
