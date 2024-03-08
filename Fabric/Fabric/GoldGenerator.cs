@@ -1,6 +1,12 @@
-﻿namespace Fabric.Fabric;
+﻿using Fabric.Interface;
+using Fabric.Product;
 
-public class GoldGenerator
+namespace Fabric.Fabric;
+
+public class GoldGenerator : ItemGenerator
 {
-    
+    public override iGameItem CreateItem()
+    {
+        return new Gold();
+    }
 }
